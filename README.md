@@ -6,6 +6,9 @@ alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 # Extracting "webapp" tar ball.
 tar xzf webapp.tar.gz
 
+# Pulling image from Docker Hub.
+docker pull balajipothula/tomcat:8
+
 # Creating or Building image from Dockerfile.
 # username/repo:tag.
 docker build -t balajipothula/tomcat:8 .
