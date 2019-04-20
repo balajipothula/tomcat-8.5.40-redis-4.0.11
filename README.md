@@ -1,5 +1,5 @@
 ## Tomcat8
-### Author: BALAJI POTHULA <balaji.pothula@techie.com>
+### Author: BALAJI POTHULA *balaji.pothula@techie.com*
 
 alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 
