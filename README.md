@@ -6,6 +6,9 @@ alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 ##### Extracting "webapp" tar ball.
 tar xzf webapp.tar.gz
 
+##### Installing "docker" on Ubuntu.
+sudo sh install-docker.sh
+
 ##### Pulling image from Docker Hub.
 docker pull balajipothula/tomcat:8
 
