@@ -3,13 +3,13 @@
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
 #### Cloning tomcat8 from GitHub.
-git clone https://github.com/balajipothula/tomcat8.git
+git clone https://github.com/balajipothula/tomcat-8.5.40.git
 
 ##### Extracting "webapp" tar ball.
-tar xzf $HOME/tomcat8/webapp.tar.gz -C $HOME/tomcat8/ 
+tar xzf $HOME/tomcat-8.5.40/webapp.tar.gz -C $HOME/tomcat-8.5.40/ 
 
 ##### Installing "docker" on Ubuntu.
-sudo sh $HOME/tomcat8/install-docker.sh
+sudo sh $HOME/tomcat-8.5.40/install-docker.sh
 
 ##### Running docker as non-sudoer.
 ##### Note: Reboot required.
