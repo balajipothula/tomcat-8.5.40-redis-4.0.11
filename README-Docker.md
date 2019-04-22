@@ -1,4 +1,4 @@
-# Tomcat8
+# Tomcat-8.5.40
 ## alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
@@ -39,7 +39,7 @@ sudo docker exec -i tomcat /webapp/tomcat/bin/startup.sh
 sudo docker exec -i tomcat /webapp/tomcat/bin/shutdown.sh
 
 ##### Executing docker container by name with stdin(-i), redis process with config file. 
-sudo docker exec -i webapp redis-server /webapp/redis/conf/redis.conf
+sudo docker exec -i tomcat redis-server /webapp/redis/conf/redis.conf
 
 ##### Login into docker container.
 sudo docker exec -i -t tomcat sh
@@ -51,4 +51,4 @@ sudo docker start tomcat
 sudo docker stop tomcat
 
 ##### Removing docker container with name.
-sudo docker rm webapp
+sudo docker rm tomcat
