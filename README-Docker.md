@@ -16,21 +16,21 @@ sudo sh $HOME/tomcat-8.5.40/install-docker.sh
 sudo usermod -a -G docker $USER
 
 ##### Pulling image from Docker Hub.
-sudo docker pull balajipothula/tomcat:8
+sudo docker pull balajipothula/tomcat:8.5.40
 
 ##### Creating or Building image from Dockerfile.
 ##### username/repo:tag.
-sudo docker build -t balajipothula/tomcat:8 .
+sudo docker build -t balajipothula/tomcat:8.5.40 .
 
 ##### Saving docker image offline into local machine.
-sudo docker save -o tomcat8.docker balajipothula/tomcat:8
+sudo docker save -o tomcat-8.5.40.docker balajipothula/tomcat:8.5.40
 
 ##### Loading offline docker image into machine.
-sudo docker load -i tomcat8.docker
+sudo docker load -i tomcat-8.5.40.docker
 
 ##### Running docker image with volume(-v) stdin(-i) daemon(-d) with port(-p) 8080 for Tomcat.
 ##### (It will create a volume inside the container)
-sudo docker run --name tomcat -d -i -p 8080:8080 --privileged -v $HOME/tomcat8/webapp:/webapp balajipothula/tomcat:8 sh
+sudo docker run --name tomcat -d -i -p 8080:8080 --privileged -v $HOME/tomcat-8.5.40/webapp:/webapp balajipothula/tomcat:8.5.40 sh
 
 ##### Executing docker container by name with stdin(-i), startup  tomcat server.
 sudo docker exec -i tomcat /webapp/tomcat/bin/startup.sh
