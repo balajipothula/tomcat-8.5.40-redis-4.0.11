@@ -4,7 +4,7 @@
 # Date        : 31 August 2016,
 # Description : Installing Docker on Ubuntu.
 
-# Note: Please run this script with root privilages.
+# Note: Please run this script with sudo privilage.
 
 # uninstalling old versions of docker.
 apt -y remove docker docker-engine docker.io
@@ -27,12 +27,6 @@ apt -y install apt-transport-https \
 # adding docker official gpg key.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
-# verifying gpg key.
-#apt-key fingerprint 0EBFCD88
-
-# deleting old docker gpg key(s).
-#apt-key del 2C52609D
-
 # setting up the stable docker repository.
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
@@ -41,10 +35,6 @@ apt update
 
 # installing latest version of docker ce.
 apt -y install docker-ce docker-ce-cli containerd.io
-
-# running docker as non-sudoer.
-# note: reboot required.
-usermod -a -G docker $USER
 
 # extracting "webapp" tar ball and removing.
 tar xzf $HOME/tomcat-8.5.40/webapp.tar.gz -C $HOME/tomcat-8.5.40/ && rm $HOME/tomcat-8.5.40/webapp.tar.gz
