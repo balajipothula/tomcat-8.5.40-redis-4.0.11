@@ -1,4 +1,4 @@
-# Tomcat-8.5.40
+# tomcat-8.5.40
 ## alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
