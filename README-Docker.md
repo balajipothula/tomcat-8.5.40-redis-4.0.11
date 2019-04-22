@@ -11,6 +11,10 @@ tar xzf $HOME/tomcat8/webapp.tar.gz -C $HOME/tomcat8/
 ##### Installing "docker" on Ubuntu.
 sudo sh $HOME/tomcat8/install-docker.sh
 
+##### Running docker as non-sudoer.
+##### Note: Reboot required.
+sudo usermod -a -G docker $USER
+
 ##### Pulling image from Docker Hub.
 sudo docker pull balajipothula/tomcat:8
 
