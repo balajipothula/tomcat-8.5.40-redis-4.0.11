@@ -6,7 +6,7 @@
 git clone https://github.com/balajipothula/tomcat8.git
 
 ##### Extracting "webapp" tar ball.
-tar xzf $HOME/tomcat8/webapp.tar.gz
+tar xzf $HOME/tomcat8/webapp.tar.gz -C $HOME/tomcat8/ 
 
 ##### Installing "docker" on Ubuntu.
 sudo sh $HOME/tomcat8/install-docker.sh
