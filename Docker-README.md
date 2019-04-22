@@ -9,7 +9,7 @@ git clone https://github.com/balajipothula/tomcat8.git
 tar xzf $HOME/tomcat8/webapp.tar.gz
 
 ##### Installing "docker" on Ubuntu.
-sudo sh install-docker.sh
+sudo sh $HOME/tomcat8/install-docker.sh
 
 ##### Pulling image from Docker Hub.
 sudo docker pull balajipothula/tomcat:8
