@@ -2,7 +2,7 @@
 
 # Author      : BALAJI POTHULA <balaji.pothula@techie.com>,
 # Date        : 31 August 2016,
-# Description : Installing Docker on Ubuntu.
+# Description : Installing tomcat Docker image on Ubuntu.
 
 # Note: Please run this script with sudo privilage.
 
