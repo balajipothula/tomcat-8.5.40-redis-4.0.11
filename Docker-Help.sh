@@ -5,13 +5,11 @@
 #### Cloning tomcat8 from GitHub.
 git clone https://github.com/balajipothula/tomcat-8.5.40.git
 
-##### Extracting "webapp" tar ball.
-tar xzf $HOME/tomcat-8.5.40/webapp.tar.gz -C $HOME/tomcat-8.5.40/ 
-
 ##### Installing "docker" on Ubuntu OS and
 ##### setting "tomcat" server with "web application".
 sudo sh $HOME/tomcat-8.5.40/setup.sh
 
+##### Adding current user to "docker" group.
 ##### Running docker as non-sudoer.
 ##### Note: Reboot required.
 ##### After Reboot sudo not required by "docker".
