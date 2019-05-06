@@ -5,5 +5,5 @@
 #### cloning tomcat-8.5.40-redis-4.0.11 from github.
 git clone https://github.com/balajipothula/tomcat-8.5.40-redis-4.0.11.git
 
-##### tomcat webapp setup.
+##### tomcat with redis webapp setup.
 sudo sh $HOME/tomcat-8.5.40-redis-4.0.11/setup.sh
