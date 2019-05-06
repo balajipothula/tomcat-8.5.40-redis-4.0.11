@@ -1,9 +1,9 @@
-# tomcat-8.5.40
+# tomcat-8.5.40-redis-4.0.11
 ## alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
 #### cloning tomcat-8.5.40 from github.
-git clone https://github.com/balajipothula/tomcat-8.5.40.git
+git clone https://github.com/balajipothula/tomcat-8.5.40-redis-4.0.11.git
 
 ##### tomcat webapp setup.
-sudo sh $HOME/tomcat-8.5.40/setup.sh
+sudo sh $HOME/tomcat-8.5.40-redis-4.0.11/setup.sh
