@@ -3,11 +3,11 @@
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
 #### Cloning tomcat8 from GitHub.
-git clone https://github.com/balajipothula/tomcat-8.5.40.git
+git clone https://github.com/balajipothula/tomcat-8.5.40-redis-4.0.11.git
 
 ##### Installing "docker" on Ubuntu OS and
 ##### setting "tomcat" server with "web application".
-sudo sh $HOME/tomcat-8.5.40/setup.sh
+sudo sh $HOME/tomcat-8.5.40-redis-4.0.11/setup.sh
 
 ##### Adding current user to "docker" group.
 ##### Running docker as non-sudoer.
@@ -39,13 +39,16 @@ sudo docker ps -a
 
 ##### Running docker image with volume(-v) stdin(-i) daemon(-d) with port(-p) 8080 for Tomcat.
 ##### (It will create a volume inside the container)
-sudo docker run --name tomcat -d -i -p 8080:8080 --privileged -v $HOME/tomcat-8.5.40/webapp:/webapp balajipothula/tomcat:8.5.40 sh
+sudo docker run --name tomcat -d -i -p 8080:8080 --privileged -v $HOME/tomcat-8.5.40-redis-4.0.11/webapp:/webapp balajipothula/tomcat:8.5.40 sh
 
 ##### Executing docker container by name with stdin(-i), startup  tomcat server.
 sudo docker exec -i tomcat /webapp/tomcat/bin/startup.sh
 
 ##### Executing docker container by name with stdin(-i), shutdown tomcat server.
 sudo docker exec -i tomcat /webapp/tomcat/bin/shutdown.sh
+
+##### Executing docker container by name with stdin(-i), startup  redis server.
+sudo docker exec -i tomcat redis-server /webapp/redis/conf/redis.conf
 
 ##### Login into docker container.
 sudo docker exec -i -t tomcat sh
